@@ -1,3 +1,29 @@
-/* styles.css */
+#dropZone {
+  width: 300px;
+  height: 200px;
+  border: 2px dashed #007bff;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 200px;
+  color: #007bff;
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+}
 
-/* Add styles here to customize the appearance of your app */
+#dropZone.dragging {
+  background-color: #e3f2fd;
+  border-color: #0056b3;
+}
+
+#preview {
+  margin-top: 20px;
+  max-width: 300px;
+}
+
+/* Hide Images Based on Attributes (e.g., no src): */
+img:not([src]) {
+  /* Hides the image without removing its space */
+  /* visibility: hidden; */
+  /* Makes the image disappear visually */
+  display: none;
+}
