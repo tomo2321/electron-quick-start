@@ -2,18 +2,18 @@
 const HOME_URL = "https://google.com";
 const webviewElement = document.getElementById("myWebview");
 
-function goHome() {
+document.getElementById("home").addEventListener("click", () => {
   webviewElement.src = HOME_URL;
-}
+});
 
-function goBack() {
+document.getElementById("back").addEventListener("click", () => {
   webviewElement.goBack();
-}
+});
 
-function goForward() {
+document.getElementById("forward").addEventListener("click", () => {
   webviewElement.goForward();
-}
+});
 
-function go() {
+document.getElementById("go").addEventListener("click", () => {
   webviewElement.src = document.getElementById("url").value;
-}
+});
